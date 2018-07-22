@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import App from './App';
 
-require('dotenv').load();
+// import App from './App';
+// import Navigation from './components/Navigation';
+// import Posts from './components/posts/Posts';
+// import Item from './components/Item';
+// import Transaction from './components/Transaction';
+import PageNotFound from './PageNotFound';
+import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(
-	<App />,
-	document.getElementById('component')
-);
+
+registerServiceWorker();
