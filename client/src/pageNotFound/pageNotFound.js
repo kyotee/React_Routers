@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './pageNotFound.css';
 
-class Whoops404 extends Component {
+class PageNotFound extends Component {
   render() {
     return (
       <h2>Page does not exist.</h2>
@@ -8,4 +9,4 @@ class Whoops404 extends Component {
   }
 }
 
-export default Whoops404;
+export default PageNotFound;
