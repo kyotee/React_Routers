@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import CardsContainer from './cardsContainer/cardsContainer';
+import Cards from './cards/cards';
 // import App from './App';
 // import Navigation from './components/Navigation';
 // import Posts from './components/posts/Posts';
