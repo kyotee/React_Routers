@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import CardsContainer from './cardsContainer/cardsContainer';
 // import App from './App';
 // import Navigation from './components/Navigation';
 // import Posts from './components/posts/Posts';
@@ -14,7 +15,7 @@ ReactDOM.render((
 	<BrowserRouter>
 		<div>
 			<Switch>
-				<Route exact path="/" component={PageNotFound}/>
+				<Route exact path="/" component={CardsContainer}/>
 			</Switch>
 		</div>
 	</BrowserRouter>),
