@@ -1,0 +1,8 @@
+#container {
+	display: inline-block
+}
+
+.button-size {
+	width: 40%;
+	font-size: 80%
+}

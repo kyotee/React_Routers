@@ -1,5 +1,15 @@
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card-resize {
+	width: 20em;
+    margin: 0;
+    padding: 0
+}
+
+.card {
+	text-align: center;
 }

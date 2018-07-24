@@ -1,57 +1,24 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
+import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
+import { Link } from 'react-router-dom';
+import './cards.css';
 
 class Cards extends Component {
-
-render() {
-
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
-};
-  return (
-    <div>
-      <Card className={styles.card}>
-        <CardMedia
-          className={styles.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
-            Lizard
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
+  render() {
+    return (
+      <Card>
+        <CardImage className="img-fluid" src="/img/bg-masthead.jpg" waves />
+        <CardBody>
+            <CardTitle>This could be you!</CardTitle>
+            <CardText>This could be you enjoying a nice hike with great views! Sign up today or sign in to see new updates!</CardText>
+            <div id="container">
+              <Link to="/signup"><Button className="button-size">Sign up</Button></Link>
+              <Link to="/signin"><Button className="button-size">Sign in</Button></Link>
+            </div>
+        </CardBody>
       </Card>
-    </div>
-  );
-
-}
-
+    )
+  }
 }
 
 export default Cards;
