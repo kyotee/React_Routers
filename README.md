@@ -1,4 +1,4 @@
-# Localization
+# React Routers
 
 This simple application serves the purpose of learning how to use react routes with node.js + express.js.
 
